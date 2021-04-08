@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "A test to deploy a node.JS Express App",
   "scripts": {
-    "start": "nodemon ./src/server.ts"
+    "start-local": "nodemon ./src/server-local.ts",
+    "build": "netlify-lambda build express"
   },
   "repository": {
     "type": "git",
@@ -21,10 +22,12 @@
     "@types/node": "^14.14.37",
     "cors": "^2.8.5",
     "express": "^4.17.1",
+    "serverless-http": "^2.7.0",
     "ts-node": "8.10.2",
     "typescript": "3.9.5"
   },
   "devDependencies": {
-    "nodemon": "^2.0.7"
+    "nodemon": "^2.0.7",
+    "netlify-lambda": "^1.6.3"
   }
 }

@@ -2,10 +2,10 @@ import express from 'express';
 import cors from "cors";
 
 const fs = require('fs');
+const serverless = require('serverless-http');
 
 // Declare Express App
 const app = express();
-const PORT = 8080;
 
 app.use(cors());
 
@@ -15,8 +15,5 @@ app.get("/results", (req, res) => {
   console.log("We did it bois");
 });
 
-app.listen(PORT, () => {
-  console.log(`⚡️[server]: Server is running at https://localhost:${PORT}`);
-})
-
-// module.exports.handler = serverless(app);
+module.exports = app;
+module.exports.handler = serverless(app);
