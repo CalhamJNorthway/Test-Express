@@ -10,7 +10,7 @@ const app = express();
 app.use(cors());
 
 app.get("/results", (req, res) => {
-  const rawData = fs.readFileSync("./similarityResults.json");
+  const rawData = fs.readFileSync(`${__dirname}/similarityResults.json`);
   res.send({ results: JSON.parse(rawData) });
   console.log("We did it bois");
 });
