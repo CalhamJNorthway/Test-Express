@@ -1,0 +1,27 @@
+{
+  "name": "test-express",
+  "version": "1.0.0",
+  "description": "A test to deploy a node.JS Express App",
+  "scripts": {
+    "start": "nodemon ./src/server.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CalhamJNorthway/Test-Express.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CalhamJNorthway/Test-Express/issues"
+  },
+  "homepage": "https://github.com/CalhamJNorthway/Test-Express#readme",
+  "dependencies": {
+    "@types/cors": "^2.8.10",
+    "@types/express": "^4.17.11",
+    "@types/node": "^14.14.37",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "ts-node": "8.10.2",
+    "typescript": "3.9.5"
+  }
+}
