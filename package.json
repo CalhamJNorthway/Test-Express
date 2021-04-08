@@ -4,7 +4,7 @@
   "description": "A test to deploy a node.JS Express App",
   "scripts": {
     "start-local": "nodemon ./src/server-local.ts",
-    "build": "netlify-lambda build src"
+    "build": "netlify-lambda build src && cp ./src/similarityResults.json ./functions"
   },
   "repository": {
     "type": "git",
