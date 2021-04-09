@@ -2,7 +2,7 @@
   "name": "test-express",
   "version": "1.0.0",
   "description": "A test to deploy a node.JS Express App",
-  "main": "./src/server.js",
+  "main": "./functions/server.js",
   "scripts": {
     "start-local": "nodemon ./src/server-local.ts",
     "build": "netlify-lambda build src && cp ./src/similarityResults.json ./functions"
