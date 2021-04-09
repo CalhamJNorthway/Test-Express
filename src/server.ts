@@ -8,6 +8,8 @@ const serverless = require('serverless-http');
 // Declare Express App
 const app = express();
 
+app.use('/help', (req, res) => res.send({ "Message": "HELLO" }));
+
 app.use('/results', (req, res) => res.sendFile(path.join(__dirname, '/similarityResults.json')));
 
 app.use(cors());
